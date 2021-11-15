@@ -35,14 +35,14 @@ public class CameraMover : MonoBehaviour
             dangerCam = false;
         }
 
-        if (!safeCamZone.playerInZone)
+        if (!safeCamZone.playerInZone && !dangerCam)
         {
             moveCam = true;
             ScrollRead = ScrollHolder;
 
             if (!dangerCamZone.playerInZone && !dangerCam)
             {
-                ScrollRead = (ScrollHolder / 4);
+                ScrollRead = (ScrollHolder / 2);
                 dangerCam = true;
             }
         }
@@ -57,7 +57,7 @@ public class CameraMover : MonoBehaviour
             targetPos = new Vector3(player.transform.position.x, player.transform.position.y, -10);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, ScrollRead);
 
-            if (Vector2.Distance(transform.position, player.transform.position) <= 0.1f)
+            if (Vector2.Distance(transform.position, player.transform.position) <= 0.3f)
             {
                 moveCam = false;
             }
