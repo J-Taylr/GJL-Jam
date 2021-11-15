@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxis("Vertical"); // -1 is down
     }
 
+   
     void FixedUpdate()
     {
         if (horizontal != 0 && vertical != 0) // Check for diagonal movement
