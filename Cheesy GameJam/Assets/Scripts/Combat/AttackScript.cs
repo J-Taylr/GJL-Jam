@@ -5,8 +5,12 @@ using UnityEngine;
 public class AttackScript : MonoBehaviour
 {
     public Transform attackPoint;
+
     public float attackRange = 0.5f;
+
     public LayerMask enemyLayer;
+
+    EnemyManager en;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +31,8 @@ public class AttackScript : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
+            en = enemy.gameObject.GetComponent<EnemyManager>();
+            en.health--;
             Debug.Log("we hit " + enemy.name);
         }
     }
