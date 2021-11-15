@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9165208416832033773}
   - component: {fileID: 9165208416832033760}
   - component: {fileID: 9165208416832033763}
+  - component: {fileID: 7415708171760973447}
   m_Layer: 6
   m_Name: CheeseGangsta
   m_TagString: Untagged
@@ -123,3 +124,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &7415708171760973447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165208416832033772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb3e6f7e1c06ca49a2410c923b48795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  target: {x: 0, y: 0}
