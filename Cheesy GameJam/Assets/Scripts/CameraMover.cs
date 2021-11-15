@@ -5,29 +5,65 @@ using UnityEngine;
 public class CameraMover : MonoBehaviour
 {
     [Header("Components")]
-    
-    public float scrollSpeed = 0.1f;
     Vector3 targetPos;
     GameObject player;
-    CamZone camZone;
-    public bool inZone;
+    public CamZone safeCamZone;
+    public CamZone dangerCamZone;
+    
+    [Header("Variables")]
+    public float ScrollHolder = 0.1f;
+    public float ScrollRead;
+    public bool moveCam;
+    public bool dangerCam;
 
     Vector3 velocity; //reference
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        camZone = GetComponentInChildren<CamZone>();
+        
     }
 
-  
+    private void Update()
+    {
+        CheckCamZones();
+    }
+
+    public void CheckCamZones()
+    {
+        if (safeCamZone.playerInZone)
+        {
+            dangerCam = false;
+        }
+
+        if (!safeCamZone.playerInZone)
+        {
+            moveCam = true;
+            ScrollRead = ScrollHolder;
+
+            if (!dangerCamZone.playerInZone && !dangerCam)
+            {
+                ScrollRead = (ScrollHolder / 4);
+                dangerCam = true;
+            }
+        }
+
+      
+    }
 
     private void FixedUpdate()
     {
-        if (!camZone.playerInZone)
-{
+        if (moveCam)
+        {
             targetPos = new Vector3(player.transform.position.x, player.transform.position.y, -10);
-            transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, scrollSpeed);
+            transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, ScrollRead);
+
+            if (Vector2.Distance(transform.position, player.transform.position) <= 0.1f)
+            {
+                moveCam = false;
+            }
         }
+
+
     }
 
     
