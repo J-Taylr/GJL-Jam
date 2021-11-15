@@ -365,26 +365,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1941347983, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1941347984, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
-      propertyPath: playerInZone
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2004709311, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
-      propertyPath: runSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2004709311, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
-      propertyPath: moveLimiter
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2004709315, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4856023061327892207, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
       propertyPath: m_RootOrder
       value: 3
