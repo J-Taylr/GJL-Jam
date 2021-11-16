@@ -141,11 +141,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  patrolSpeed: 3
   speed: 1
   RotationSpeed: 1
   knockbackStrength: 500
-  Chasing: 1
+  startWaitTime: 0
+  Chasing: 0
   target: {x: 0, y: 0}
+  moveSpots:
+  - {fileID: 1201865579}
+  - {fileID: 2073938716}
+  - {fileID: 2104009052}
+  - {fileID: 1832159527}
 --- !u!1 &343274287
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +453,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1201865579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5119745442723805071, guid: 3dd663b5705cc41439eccbcad7770323, type: 3}
+  m_PrefabInstance: {fileID: 9165208416673465274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1832159527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3722233355474868263, guid: 3dd663b5705cc41439eccbcad7770323, type: 3}
+  m_PrefabInstance: {fileID: 9165208416673465274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2073938716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6272921245858129794, guid: 3dd663b5705cc41439eccbcad7770323, type: 3}
+  m_PrefabInstance: {fileID: 9165208416673465274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2104009052 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5348212771406689823, guid: 3dd663b5705cc41439eccbcad7770323, type: 3}
+  m_PrefabInstance: {fileID: 9165208416673465274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9165208416673465274
 PrefabInstance:
   m_ObjectHideFlags: 0
