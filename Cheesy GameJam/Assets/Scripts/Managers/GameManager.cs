@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     }
     //starthere//starthere//starthere//starthere//starthere//starthere//starthere//starthere//starthere//starthere//starthere//starthere//starthere
 
-    bool gameActive = true;
+    public bool gameActive = true;
     [Header("Score & Time")]
     public Text textTimer;
     public float time = 0;
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     public void DisplayTime(float timeToDisplay)
     {
-        timeToDisplay += 1;
+       // timeToDisplay += 1;
 
          minutes = Mathf.FloorToInt(timeToDisplay / 60);
         seconds = Mathf.FloorToInt(timeToDisplay % 60);

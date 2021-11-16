@@ -10,6 +10,8 @@ public class PlayerManager : MonoBehaviour
     {
         if (health == 0)
         {
+            GameManager.Instance.gameActive = false;
+
             Debug.Log("You're Dead");
         }
     }

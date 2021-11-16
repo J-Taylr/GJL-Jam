@@ -57,7 +57,7 @@ public class CameraMover : MonoBehaviour
             targetPos = new Vector3(player.transform.position.x, player.transform.position.y, -10);
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, ScrollRead);
 
-            if (Vector2.Distance(transform.position, player.transform.position) <= 0.3f)
+            if (Vector2.Distance(transform.position, player.transform.position) <= 0.2f)
             {
                 moveCam = false;
             }
