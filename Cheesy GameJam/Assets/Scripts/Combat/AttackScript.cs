@@ -6,7 +6,11 @@ public class AttackScript : MonoBehaviour
 {
     public Transform attackPoint;
 
+    public GameObject projectile;
+
     public float attackRange = 0.5f;
+
+    public int weapon;
 
     public LayerMask enemyLayer;
 
@@ -20,9 +24,22 @@ public class AttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && (weapon == 1))
         {
             Attack();
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && (weapon == 2))
+        {
+            Shoot();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            weapon = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            weapon = 2;
         }
     }
     void Attack()
@@ -35,6 +52,10 @@ public class AttackScript : MonoBehaviour
             en.health--;
             Debug.Log("we hit " + enemy.name);
         }
+    }
+    void Shoot()
+    {
+        Instantiate(projectile, attackPoint.transform.position, attackPoint.rotation);
     }
 
     private void OnDrawGizmosSelected()

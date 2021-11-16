@@ -524,8 +524,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 933166305747132227, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 933166305747132227, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240466316735468298, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
+      propertyPath: weapon
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4240466316735468298, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 1856321864466193775, guid: 211ae4ea7bdc7814d911e91cb74c721e, type: 3}
     - target: {fileID: 4856023061327892207, guid: 52c35d8dfbd8490428b57bc04847c819, type: 3}
       propertyPath: m_RootOrder
       value: 1
