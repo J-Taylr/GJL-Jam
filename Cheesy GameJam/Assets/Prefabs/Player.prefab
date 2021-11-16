@@ -331,7 +331,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPoint: {fileID: 933166305747132227}
+  projectile: {fileID: 1856321864466193775, guid: 211ae4ea7bdc7814d911e91cb74c721e, type: 3}
   attackRange: 0.5
+  weapon: 0
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64

@@ -7,7 +7,7 @@ public class EnemyManager : MonoBehaviour
 
 
     public int health = 1;
-
+    public int killPoints = 100;
     public float patrolSpeed = 1.0f;
     public float speed = 1.0f;
     public float RotationSpeed;
@@ -39,7 +39,7 @@ public class EnemyManager : MonoBehaviour
     {
         if(health == 0)
         {
-            Destroy(gameObject);
+            Die();
         }
         if (Chasing == true)
         {
@@ -109,6 +109,15 @@ public class EnemyManager : MonoBehaviour
                 waitTime -= Time.deltaTime;
             }
         }
+    }
+
+
+
+    public void Die()
+    {
+        GameManager.Instance.AddPoints(killPoints);
+
+        Destroy(gameObject);
     }
 }
 
