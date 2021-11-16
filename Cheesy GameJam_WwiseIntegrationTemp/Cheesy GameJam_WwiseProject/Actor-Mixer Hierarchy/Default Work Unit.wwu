@@ -1,6 +1,1311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E74B19B6-B7CE-4B3F-A67E-738267545363}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{F8FD1205-FF66-44AD-B051-686459279CBF}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{E74B19B6-B7CE-4B3F-A67E-738267545363}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F8FD1205-FF66-44AD-B051-686459279CBF}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Weapons" ID="{7361016E-9BCA-48E1-8B6A-D96BF123CE72}" ShortID="591250031">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C9C22BB3-58DB-42FB-BB2E-B9EDA0CAE816}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="101"/>
+											<Property Name="Min" Type="Real64" Value="-152"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1A70F995-7CA1-4906-8AE6-027978BA244E}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="PistolShot" ID="{2FEC0253-ADE1-40D7-AEB9-BBEA0844D953}" ShortID="313258285">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Heavy_Pistol_Shot" ID="{173721FE-E8F2-4CB8-8BCF-D9C5749475AB}" ShortID="421459369">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F8DBF525-59EF-4252-B3C7-E4C3747B5A7C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{77D05AF1-9AEF-4F97-9B6D-76B0DDF41CFD}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-7"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Heavy_Pistol_Shot" ID="{B972491C-6CEF-4744-9FCF-033E4554FF24}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00628701050620822"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0100592168099331"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.266192024832856"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Weapons\Heavy_Pistol_Shot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="110777647"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Heavy_Pistol_Shot" ID="{B972491C-6CEF-4744-9FCF-033E4554FF24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Light_Pistol_Shot" ID="{F73DC4E7-8AC3-4D28-8648-12C3F92B6D24}" ShortID="1027681358">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-330</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5A563415-424E-4549-AAC4-EAF004F4A337}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Light_Pistol_Shot" ID="{C36DCB4B-7D02-4C2A-BB7F-A2744362CFFC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0113166189111748"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.276628462273162"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Weapons\Light_Pistol_Shot.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="770330426"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Light_Pistol_Shot" ID="{C36DCB4B-7D02-4C2A-BB7F-A2744362CFFC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Baseball Bat" ID="{36384F74-24D7-476E-AD38-3E85BC344282}" ShortID="516836114">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Metal_Baseball_Swing_Loop" ID="{AC3C1741-3A40-4FF6-89C9-5C7884651F76}" ShortID="811093862">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>26</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D1B3AD88-B578-43DD-A41A-BF5186E0174D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="101"/>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FFC21C13-D729-4A25-9A57-D0A5826767E7}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stereo_Metal_Baseball_Swing" ID="{32414F71-5A8B-4D31-B07F-2978E2B1706E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.3689111747851"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Weapons\Stereo_Metal_Baseball_Swing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="327737657"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Stereo_Metal_Baseball_Swing" ID="{32414F71-5A8B-4D31-B07F-2978E2B1706E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Metal_Baseball_Swing" ID="{D1775B29-EC06-4439-B1D0-9770EEB08C8C}" ShortID="37056248">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>26</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FBB026D3-8684-429F-BFE7-4AFB3E5771F1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="101"/>
+															<Property Name="Min" Type="Real64" Value="-126"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stereo_Metal_Baseball_Swing" ID="{1CE04DE4-8495-46F1-9927-DAFC17F10CEE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.058202005730659"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0250716332378223"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.149534383954155"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Weapons\Stereo_Metal_Baseball_Swing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="101535803"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Stereo_Metal_Baseball_Swing" ID="{1CE04DE4-8495-46F1-9927-DAFC17F10CEE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Footsteps" ID="{B1BCD6B4-4525-4B75-A850-49360548763F}" ShortID="733151987">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="footstep_surface" ID="{EBB46105-6A06-4338-9ADD-F12038896AD8}" ShortID="214654761">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{82343493-D955-4D1F-BD2E-576AFE460D3F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-126"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3D532795-F8C3-47C3-AFA2-E9692B6B5A8C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="concrete" ID="{D3470248-3378-4360-99D8-E0F91FCFFB41}" WorkUnitID="{E2B2541B-F0E4-48B8-9372-E48DE0D87A56}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="footstep_surface" ID="{9D9C94CE-5B0E-4729-A7CB-7252576EF72A}" WorkUnitID="{E2B2541B-F0E4-48B8-9372-E48DE0D87A56}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="footstep_walk_concrete" ID="{36A54D45-91CA-4089-BADC-5C2630C2A273}" ShortID="478160558">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Footstep_Concrete_01" ID="{58C5328C-1D97-4572-B30D-6F820E128B1A}" ShortID="553079069">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Concrete_01" ID="{54BBC880-0451-47CC-AD34-139F0AC96B05}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Concrete\Footstep_Concrete_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="946880692"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Concrete_01" ID="{54BBC880-0451-47CC-AD34-139F0AC96B05}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footstep_Concrete_02" ID="{A7E1447B-2EB8-4FE5-B021-88232F4E1ED7}" ShortID="615912382">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Concrete_02" ID="{D0CC8064-E702-4F4F-8631-55BDA3555879}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Concrete\Footstep_Concrete_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="388910028"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Concrete_02" ID="{D0CC8064-E702-4F4F-8631-55BDA3555879}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footstep_Concrete_03" ID="{3F074645-E7E1-40A5-B874-41B252AD9161}" ShortID="30176499">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Concrete_03" ID="{4F4744E2-B62D-49D0-B25C-828518236E9C}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Concrete\Footstep_Concrete_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="192376146"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Concrete_03" ID="{4F4744E2-B62D-49D0-B25C-828518236E9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footstep_Concrete_04" ID="{60FF6C4E-91FE-4BC1-8B07-5AE92A3A407F}" ShortID="692826703">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Concrete_04" ID="{2B9B2824-0F38-4F6B-9592-DB99F9980D81}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Concrete\Footstep_Concrete_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="503908322"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Concrete_04" ID="{2B9B2824-0F38-4F6B-9592-DB99F9980D81}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="footstep_walk_wood" ID="{ABFDAAAF-A0E2-4A28-BF87-88FB46227FAE}" ShortID="1024128657">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Footstep_Wood_01" ID="{B057A374-6BAC-4C24-A622-3EC3AC0B60BD}" ShortID="99295942">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Wood_01" ID="{B042C88F-CED5-4BC9-8106-DA04C64ABA5E}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Wood\Footstep_Wood_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="334966199"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Wood_01" ID="{B042C88F-CED5-4BC9-8106-DA04C64ABA5E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footstep_Wood_02" ID="{87A69634-D1E2-40B2-9640-C1A8727C8AA9}" ShortID="400447300">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Wood_02" ID="{8C8B0C0B-0FC1-40EA-960B-F729ACD964EC}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Wood\Footstep_Wood_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="633681398"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Wood_02" ID="{8C8B0C0B-0FC1-40EA-960B-F729ACD964EC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footstep_Wood_03" ID="{09253F1B-225E-4456-90E9-D66333997156}" ShortID="329521114">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Wood_03" ID="{3F5AEC99-0826-4070-AF67-A340C5AB7247}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Wood\Footstep_Wood_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="93848725"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Wood_03" ID="{3F5AEC99-0826-4070-AF67-A340C5AB7247}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Footstep_Wood_04" ID="{E844BB40-FD33-412A-B9D7-B239C2E215C7}" ShortID="901062956">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Footstep_Wood_04" ID="{8ADB0590-BA99-4734-BAD8-4D06A4DB3440}">
+													<Language>SFX</Language>
+													<AudioFile>Footsteps\Wood\Footstep_Wood_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="907593323"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Footstep_Wood_04" ID="{8ADB0590-BA99-4734-BAD8-4D06A4DB3440}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="footstep_walk_concrete" ID="{36A54D45-91CA-4089-BADC-5C2630C2A273}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="footstep_walk_wood" ID="{ABFDAAAF-A0E2-4A28-BF87-88FB46227FAE}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="wood" ID="{55D0DB35-5CA2-4400-B5BA-D7C4B64EC3E8}"/>
+										<ItemList>
+											<ItemRef Name="footstep_walk_wood" ID="{ABFDAAAF-A0E2-4A28-BF87-88FB46227FAE}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="concrete" ID="{D3470248-3378-4360-99D8-E0F91FCFFB41}"/>
+										<ItemList>
+											<ItemRef Name="footstep_walk_concrete" ID="{36A54D45-91CA-4089-BADC-5C2630C2A273}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Exploration" ID="{A65A0C98-4D98-4A8A-BAE4-BCD6741B4167}" ShortID="441019405">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Expl_Weather_Biome_Type" ID="{4181475B-1A4C-4AA9-9E27-A63D98A46992}" ShortID="851372988">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Biome_Type" ID="{B9162E84-FE37-4F55-A12E-AD9A4E1FD68D}" WorkUnitID="{716EEE53-6959-4875-A708-345E1B9B0D1D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Expl_Weather_Thunder_Field_Type" ID="{1B181D91-5CBE-480B-B8B5-341A7370D056}" ShortID="929789986">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{6CD1ABEE-76BD-45BE-A5B5-3904BB09A6E5}" WorkUnitID="{716EEE53-6959-4875-A708-345E1B9B0D1D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Weather_Type" ID="{A9CC8A15-FD00-47D4-B11A-22F58A422FFA}" WorkUnitID="{716EEE53-6959-4875-A708-345E1B9B0D1D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Thunder_Forest_Harsh" ID="{99D45081-4749-49BB-9435-747BEDC15CFD}" ShortID="397940777">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder_Forest_Harsh" ID="{BFE9BC37-3CAF-4C48-928E-0945C0A9FF2B}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Stormy Field\Thunder_Forest_Harsh.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="441910218"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder_Forest_Harsh" ID="{BFE9BC37-3CAF-4C48-928E-0945C0A9FF2B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder_Forest_Light_Rain" ID="{ADAC4D0B-8EF7-462E-ACDD-D87ED6B538E1}" ShortID="537429571">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder_Forest_Light_Rain" ID="{14F4B14F-A37A-4668-95C6-195EDFCE0B91}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Stormy Field\Thunder_Forest_Light_Rain.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="919998594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder_Forest_Light_Rain" ID="{14F4B14F-A37A-4668-95C6-195EDFCE0B91}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder_Forest_Medium" ID="{489CEB4F-9A07-4A82-A443-CFDE47333585}" ShortID="580056392">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder_Forest_Medium" ID="{D07D3540-32C7-436B-A8FD-AE69B32E142F}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Stormy Field\Thunder_Forest_Medium.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="790029018"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder_Forest_Medium" ID="{D07D3540-32C7-436B-A8FD-AE69B32E142F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Thunder_Forest_Light" ID="{C69C030B-7012-4A44-B578-159555A44A28}" ShortID="89333431">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder_Forest_Light" ID="{FC3A6C36-70A7-4DD3-820C-B8A02073BE66}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Stormy Field\Thunder_Forest_Light.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="743843899"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder_Forest_Light" ID="{FC3A6C36-70A7-4DD3-820C-B8A02073BE66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Thunder_Forest_Light" ID="{C69C030B-7012-4A44-B578-159555A44A28}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Thunder_Forest_Light_Rain" ID="{ADAC4D0B-8EF7-462E-ACDD-D87ED6B538E1}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Thunder_Forest_Medium" ID="{489CEB4F-9A07-4A82-A443-CFDE47333585}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Thunder_Forest_Harsh" ID="{99D45081-4749-49BB-9435-747BEDC15CFD}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="rain" ID="{1E0B5841-C157-4B4B-9E01-CD605D419B78}"/>
+												<ItemList>
+													<ItemRef Name="Thunder_Forest_Light" ID="{C69C030B-7012-4A44-B578-159555A44A28}"/>
+													<ItemRef Name="Thunder_Forest_Light_Rain" ID="{ADAC4D0B-8EF7-462E-ACDD-D87ED6B538E1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}"/>
+												<ItemList>
+													<ItemRef Name="Thunder_Forest_Light_Rain" ID="{ADAC4D0B-8EF7-462E-ACDD-D87ED6B538E1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="thunder" ID="{E44E2E7C-7E8A-4A38-9A16-87155FB24FA9}"/>
+												<ItemList>
+													<ItemRef Name="Thunder_Forest_Harsh" ID="{99D45081-4749-49BB-9435-747BEDC15CFD}"/>
+													<ItemRef Name="Thunder_Forest_Light_Rain" ID="{ADAC4D0B-8EF7-462E-ACDD-D87ED6B538E1}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Expl_Weather_Forest_Night_Clear" ID="{D3A6F564-4FCD-41E7-8D0E-24F92C58AB4F}" ShortID="1006109989">
+									<PropertyList>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}" WorkUnitID="{716EEE53-6959-4875-A708-345E1B9B0D1D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Weather_Type" ID="{A9CC8A15-FD00-47D4-B11A-22F58A422FFA}" WorkUnitID="{716EEE53-6959-4875-A708-345E1B9B0D1D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Clear_Jungle_Ambience4" ID="{845E05CE-DC20-4496-8F95-7CCE0D2B0C27}" ShortID="510370193">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clear_Jungle_Ambience4" ID="{6D7FDD29-179E-4143-9B42-84354881B6BA}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Forest_Ambience_Calm\Clear_Jungle_Ambience4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="610839429"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clear_Jungle_Ambience4" ID="{6D7FDD29-179E-4143-9B42-84354881B6BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Clear_Jungle_Ambience5" ID="{B27D3484-EE54-4C9B-9740-81D67A88FB0B}" ShortID="299928271">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Clear_Jungle_Ambience5" ID="{68F844B7-A851-4256-A0E9-774D9EB94C11}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Forest_Ambience_Calm\Clear_Jungle_Ambience5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="777882882"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Clear_Jungle_Ambience5" ID="{68F844B7-A851-4256-A0E9-774D9EB94C11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Rain_Jungle_Ambience" ID="{5B9036DB-FAAF-4C51-9F7A-0A55963C2861}" ShortID="793942771">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Thunder_Forest_Light_Rain" ID="{4B6D258C-368F-4D8A-98DE-7DD120943A89}">
+													<Language>SFX</Language>
+													<AudioFile>Weather\Stormy Field\Thunder_Forest_Light_Rain.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="919998594"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Thunder_Forest_Light_Rain" ID="{4B6D258C-368F-4D8A-98DE-7DD120943A89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Jungle" ID="{A5D86204-CCBD-43CC-B31A-924D43EE0CBD}" ShortID="619848389">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Clear_Jungle_Ambience" ID="{74BA9EAE-B33F-4788-A641-C3F137F830B2}" ShortID="194978553">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Clear_Jungle_Ambience" ID="{B53781F2-71D6-4291-9A80-AF3227089046}">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="4838.366"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Weather\Forest_Ambience_Calm\Clear_Jungle_Ambience.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="549926739"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Clear_Jungle_Ambience" ID="{B53781F2-71D6-4291-9A80-AF3227089046}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Clear_Jungle_Ambience2" ID="{1C9024EB-8C01-4487-80B5-B21D5C165389}" ShortID="17239650">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Clear_Jungle_Ambience2" ID="{EDFF0AD2-B112-4384-B834-D58A994CF546}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.384790887290168"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.384790887290169"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Weather\Forest_Ambience_Calm\Clear_Jungle_Ambience2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="970296465"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Clear_Jungle_Ambience2" ID="{EDFF0AD2-B112-4384-B834-D58A994CF546}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Jungle" ID="{A5D86204-CCBD-43CC-B31A-924D43EE0CBD}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Clear_Jungle_Ambience5" ID="{B27D3484-EE54-4C9B-9740-81D67A88FB0B}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Clear_Jungle_Ambience4" ID="{845E05CE-DC20-4496-8F95-7CCE0D2B0C27}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Rain_Jungle_Ambience" ID="{5B9036DB-FAAF-4C51-9F7A-0A55963C2861}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>3</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="rain" ID="{1E0B5841-C157-4B4B-9E01-CD605D419B78}"/>
+												<ItemList>
+													<ItemRef Name="Clear_Jungle_Ambience5" ID="{B27D3484-EE54-4C9B-9740-81D67A88FB0B}"/>
+													<ItemRef Name="Rain_Jungle_Ambience" ID="{5B9036DB-FAAF-4C51-9F7A-0A55963C2861}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}"/>
+												<ItemList>
+													<ItemRef Name="Jungle" ID="{A5D86204-CCBD-43CC-B31A-924D43EE0CBD}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Expl_Weather_Forest_Night_Clear" ID="{D3A6F564-4FCD-41E7-8D0E-24F92C58AB4F}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2.5</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2.5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Expl_Weather_Thunder_Field_Type" ID="{1B181D91-5CBE-480B-B8B5-341A7370D056}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>4</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>4.5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="field" ID="{BC25F83B-510B-45F3-A5C6-816DDDB23246}"/>
+										<ItemList>
+											<ItemRef Name="Expl_Weather_Thunder_Field_Type" ID="{1B181D91-5CBE-480B-B8B5-341A7370D056}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="forest" ID="{B9ECA472-2F1F-4DFC-971A-B56371D15761}"/>
+										<ItemList>
+											<ItemRef Name="Expl_Weather_Forest_Night_Clear" ID="{D3A6F564-4FCD-41E7-8D0E-24F92C58AB4F}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Vehicles" ID="{D9B99A29-CF68-434F-A2C4-B27EE9AC4F14}" ShortID="859230508">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="Helicopter" ID="{9105D61E-7928-41BD-BE63-F9DC82F1A6DB}" ShortID="602081846">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{C6B12E8C-8123-4DF6-B17A-F3BF6ECA54C5}" ShortID="200129704">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distance" ID="{01949419-76FE-4E0A-9D03-5D43C4F75634}" WorkUnitID="{4286DF22-4D05-4749-862C-AAADAE6799AF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{C0A0E2B6-2EAF-46C3-BEE4-2794BBE8CBC8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>59</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{5790D8F5-3CCB-4117-84E3-3D4751260CE8}" ShortID="27905358">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Velocity" ID="{3F0E33A8-D517-4E2B-91CD-521824935AA6}" WorkUnitID="{4286DF22-4D05-4749-862C-AAADAE6799AF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F53DC585-B2B9-452F-B853-AEAFA534C6B4}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-40</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>110</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{91C466D1-23B9-43FA-B53F-51657CCDC170}" ShortID="716617896">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distance" ID="{01949419-76FE-4E0A-9D03-5D43C4F75634}" WorkUnitID="{4286DF22-4D05-4749-862C-AAADAE6799AF}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{99741F33-E5DE-47AD-93B5-8C68CE689D51}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Helicopter_Idle" ID="{7D5537A7-5CE3-4561-94C0-CC366B5E8E2B}" ShortID="179344497">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Helicopter_Idle" ID="{07E962C2-B644-4FC3-BA57-C240C08ABF64}">
+											<Language>SFX</Language>
+											<AudioFile>Vehicles\Helicopter\Helicopter_Idle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="195863892"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Helicopter_Idle" ID="{07E962C2-B644-4FC3-BA57-C240C08ABF64}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Helicopter_Idle_Rough" ID="{75C9DDEC-DEE6-4E07-836C-A560520DF147}" ShortID="416154043">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3B02E62A-DCE0-4B58-AF11-69B657514321}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C835E196-61C0-4035-AC87-ACD0224F33DC}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Helicopter_Idle_Rough" ID="{D7B9AC08-F9AB-4A7C-8048-E9B827911AB4}">
+											<Language>SFX</Language>
+											<AudioFile>Vehicles\Helicopter\Helicopter_Idle_Rough.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="610632640"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Helicopter_Idle_Rough" ID="{D7B9AC08-F9AB-4A7C-8048-E9B827911AB4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</BlendContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{E3F7646C-32C9-49F7-B5D7-73A01EC1B6C0}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{454FF2C6-EF6D-44F1-8BB6-9CEFBD285E3E}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{E3F7646C-32C9-49F7-B5D7-73A01EC1B6C0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{454FF2C6-EF6D-44F1-8BB6-9CEFBD285E3E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="WeaponSounds" ID="{3D1BDE42-E3C4-4AEB-84A6-F2B17945C322}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Gun" ID="{1011AB17-FB85-4552-9B4F-026714001CD1}" WorkUnitID="{C3CE8D78-4059-4CC7-9845-5287E8747AD0}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Gun" ID="{8310B60A-CD15-4B70-A3D7-9907412E58C0}" WorkUnitID="{C3CE8D78-4059-4CC7-9845-5287E8747AD0}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

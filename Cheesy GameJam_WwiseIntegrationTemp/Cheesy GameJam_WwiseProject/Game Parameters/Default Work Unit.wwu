@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{2CF53F0B-0B21-4269-840E-BBA79BDE4BAB}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{4286DF22-4D05-4749-862C-AAADAE6799AF}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{2CF53F0B-0B21-4269-840E-BBA79BDE4BAB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4286DF22-4D05-4749-862C-AAADAE6799AF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Velocity" ID="{3F0E33A8-D517-4E2B-91CD-521824935AA6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Distance" ID="{01949419-76FE-4E0A-9D03-5D43C4F75634}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

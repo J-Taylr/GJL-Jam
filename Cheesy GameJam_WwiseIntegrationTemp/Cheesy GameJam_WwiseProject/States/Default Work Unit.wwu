@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{547BCF19-592B-4444-A40A-8F3801BCAEB4}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{716EEE53-6959-4875-A708-345E1B9B0D1D}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{547BCF19-592B-4444-A40A-8F3801BCAEB4}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{716EEE53-6959-4875-A708-345E1B9B0D1D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Biome_Type" ID="{B9162E84-FE37-4F55-A12E-AD9A4E1FD68D}">
+					<ChildrenList>
+						<State Name="None" ID="{C5C2431B-724F-4B21-B18C-9B3512501BE3}"/>
+						<State Name="forest" ID="{B9ECA472-2F1F-4DFC-971A-B56371D15761}"/>
+						<State Name="field" ID="{BC25F83B-510B-45F3-A5C6-816DDDB23246}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="field" ID="{BC25F83B-510B-45F3-A5C6-816DDDB23246}"/>
+							<EndState Name="forest" ID="{B9ECA472-2F1F-4DFC-971A-B56371D15761}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Weather_Type" ID="{A9CC8A15-FD00-47D4-B11A-22F58A422FFA}">
+					<ChildrenList>
+						<State Name="None" ID="{6CD1ABEE-76BD-45BE-A5B5-3904BB09A6E5}"/>
+						<State Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}"/>
+						<State Name="rain" ID="{1E0B5841-C157-4B4B-9E01-CD605D419B78}"/>
+						<State Name="thunder" ID="{E44E2E7C-7E8A-4A38-9A16-87155FB24FA9}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}"/>
+							<EndState Name="rain" ID="{1E0B5841-C157-4B4B-9E01-CD605D419B78}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="thunder" ID="{E44E2E7C-7E8A-4A38-9A16-87155FB24FA9}"/>
+							<EndState Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="noweather" ID="{780E154E-0378-404F-8035-19622705D00B}"/>
+							<EndState Name="None" ID="{6CD1ABEE-76BD-45BE-A5B5-3904BB09A6E5}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

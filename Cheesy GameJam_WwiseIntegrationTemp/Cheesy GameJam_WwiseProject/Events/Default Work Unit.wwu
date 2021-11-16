@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C70CBC4D-95E9-476D-8F6B-44653B23176A}" SchemaVersion="103">
+<WwiseDocument Type="WorkUnit" ID="{C3CE8D78-4059-4CC7-9845-5287E8747AD0}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{C70CBC4D-95E9-476D-8F6B-44653B23176A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C3CE8D78-4059-4CC7-9845-5287E8747AD0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Weapons" ID="{E3044906-14DA-4C8E-83A1-F0461463ABBC}" ShortID="588961479">
+					<ChildrenList>
+						<Event Name="Stop_Gun" ID="{1011AB17-FB85-4552-9B4F-026714001CD1}">
+							<ChildrenList>
+								<Action Name="" ID="{59BB1B2B-AE40-4377-8BFC-749487FCC713}" ShortID="80106863">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Light_Pistol_Shot" ID="{F73DC4E7-8AC3-4D28-8648-12C3F92B6D24}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{748EE041-BE2B-4999-87F4-116CFCA7D206}" ShortID="257685318">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heavy_Pistol_Shot" ID="{173721FE-E8F2-4CB8-8BCF-D9C5749475AB}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Gun" ID="{8310B60A-CD15-4B70-A3D7-9907412E58C0}">
+							<ChildrenList>
+								<Action Name="" ID="{42D2B87C-8E54-4E0A-A650-100630DEF782}" ShortID="937685127">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Light_Pistol_Shot" ID="{F73DC4E7-8AC3-4D28-8648-12C3F92B6D24}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{070FD66E-2E45-4911-A2C2-39158EDF5CD7}" ShortID="986703039">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Heavy_Pistol_Shot" ID="{173721FE-E8F2-4CB8-8BCF-D9C5749475AB}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Bat_Swing" ID="{2D065424-2104-4D37-B88A-39A6127B2193}">
+							<ChildrenList>
+								<Action Name="" ID="{EA13F097-44D9-4B91-ABAB-FE5E9ED489A7}" ShortID="962955840">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Metal_Baseball_Swing" ID="{D1775B29-EC06-4439-B1D0-9770EEB08C8C}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AB90931C-6C6E-4E1D-98FB-31EAA271F869}" ShortID="853342033">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Metal_Baseball_Swing_Loop" ID="{AC3C1741-3A40-4FF6-89C9-5C7884651F76}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Bat_Swing" ID="{D03976E7-ABE2-4ECE-A1E4-972A9499C0F1}">
+							<ChildrenList>
+								<Action Name="" ID="{98A6DF64-6AD6-4030-841F-4DB3B75C81C6}" ShortID="93226926">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Metal_Baseball_Swing" ID="{D1775B29-EC06-4439-B1D0-9770EEB08C8C}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6844357D-0474-4B8E-BB36-1AF6625277AA}" ShortID="705963976">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Metal_Baseball_Swing_Loop" ID="{AC3C1741-3A40-4FF6-89C9-5C7884651F76}" WorkUnitID="{F8FD1205-FF66-44AD-B051-686459279CBF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
