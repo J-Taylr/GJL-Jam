@@ -93,6 +93,10 @@ public class EnemyManager : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpots].position, patrolSpeed * Time.deltaTime);
 
+        Vector3 dirR = moveSpots[randomSpots].position - transform.position;
+        float angle = Mathf.Atan2(dirR.y, dirR.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
         if (Vector2.Distance(transform.position, moveSpots[randomSpots].position) < 0.2f)
         {
             if(waitTime <= 0)
